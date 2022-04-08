@@ -1,6 +1,49 @@
-/*
+/* GENERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
-*/
-/*
-    
-*/
+body{
+    background-color: rgb(8, 59, 76);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin: 30px;
+}
+
+/* PER J */
+.container{
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(19, 137, 178);
+}
+
+.box.fizz{
+    background-color: rgb(11, 214, 161);
+}
+
+.box.buzz{
+    background-color: rgb(255, 209, 102);
+}
+
+.box.fizz.buzz{
+    background-color: rgb(240, 70, 111);
+}
