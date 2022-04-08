@@ -39,30 +39,52 @@ for (let i = 1; i <= limit; i++) {
 
 
 // Come faccio a farlo in altro modo con append?
-/*    
+/*
 for (let i = 1; i <= limit; i++) {
     const box = document.createElement('div');
     box.classList.add('box');
     container.append(box);
 
-    if (!(i % 3)) {
-        box.append('Fizz');
-        box.classList.add('fizz');
-    } else if (!(i % 5)) {
-        box.append('Buzz');
-        box.classList.add('buzz'); 
-    } else if (???) {
+    if (!(i % 3) && !(i % 5)) {
         box.append('FizzBuzz');
         box.classList.add('fizz');
         box.classList.add('buzz'); 
+    } else if (!(i % 5)) {
+        box.append('Buzz');
+        box.classList.add('buzz'); 
+    } else if (!(i % 3)) {
+        box.append('Fizz');
+        box.classList.add('fizz');
     } else {
         box.append(i);
-    }
-}
+    };
+
+    
+    //Dovevo solo posizionare la possibilità doppia più
+    //in alto nella lista delle possibilità in modo da
+    //dargli la precedenza!
+};
 */
+
 
 
 // Come faccio a farlo con innerHTML?
 /*
+for (let i = 1; i <= limit; i++) {
+    // container.innerHTML += `<div class="box"></div>`;
+    // console.log(container);
+    
+    if (!(i % 15)) {
+        container.innerHTML += `<div class="box fizz buzz">FizzBuzz>/div>`;
+    } else if (!(i % 5)) {
+        container.innerHTML += `<div class="box buzz">Buzz</div>`;
+    } else if (!(i % 15)) {
+        container.innerHTML += `<div class="box fizz">Fizz</div>`;
+    }
 
+    if ((i % 3 && i % 5)) {
+        container.innerHTML += `<div class="box">${i}</div>`;
+    }
+
+};
 */
